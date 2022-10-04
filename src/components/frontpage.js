@@ -26,8 +26,7 @@ const frontpage = () => {
                 ></img>
             </div>
                 <div className='justify-center lg:py-56 text-start mx-6 lg:ml-0 md:py-32 font-kalam'>
-                    <h1 className="text-white text-sm lg:text-lg">Hi, There...</h1>
-                    <h1 className="text-white text-5xl lg:text-7xl mt-2">I Am Pavan</h1>
+                    <h1 className="text-white text-5xl lg:text-7xl mt-2">Hi, I Am Pavan</h1>
                     <h1 className=" text-pink-600 text-lg lg:text-2xl mt-1">Software Engneer</h1>
                     <h1 className=" text-gray-400 text-xl lg:text-3xl mt-2 ">
                     I am very Happy and glad to see you here, Let's checkout my persanal portfolio</h1>
