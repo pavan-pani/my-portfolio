@@ -6,7 +6,7 @@ const backgroundDitails = () => {
         <div className='flex flex-col md:flex-row justify-center'>
             <div className='relative mt-2'>
             <div className='m-2 lg:px-20 py-3 border-2 border-dotted'>
-                <h1 className='text-3xl lg:text-5xl text-pink-500 text-center font-semibold '>Technical Background</h1>
+                <h1 className='text-3xl lg:text-5xl text-pink-500 text-center font-semibold '>Technical</h1>
             </div>
                 <div className='absolute z-50 bg-pink-400 rounded-full ml-1 w-10 h-max '>
                     <img src="https://www.kodnest.com/wp-content/uploads/2022/07/icon-wbb.png" intrinsicsize="512 x 512" 
@@ -49,7 +49,7 @@ const backgroundDitails = () => {
         <div className='flex flex-col lg:flex-row md:flex-row'>
             <div className='relative mt-2'>
             <div className='m-2 lg:px-20 py-3 border-2 border-dotted'>
-                <h1 className='text-3xl lg:text-5xl text-pink-500 text-center font-semibold '>Educational Background</h1>
+                <h1 className='text-3xl lg:text-5xl text-pink-500 text-center font-semibold '>Education</h1>
             </div>
                 <div className='absolute z-50 bg-pink-400 rounded-full ml-1 w-10 h-max'>
                     <img src="https://www.svgrepo.com/show/190651/graduation.svg" intrinsicsize="512 x 512" 
@@ -91,10 +91,7 @@ const backgroundDitails = () => {
             </div>  
         </div>
         </div>
-
-       
-    </div>
-    
+    </div> 
   )
 }
 

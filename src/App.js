@@ -3,12 +3,18 @@ import './App.css';
 import Frontpage from './components/frontpage';
 import Background from './components/background';
 import BackgroundDitails from './components/backgroundDitails';
+import Skills from './components/skills';
+import Aboutme from './components/aboutme';
 
 function App() {
   return (
-    // <Frontpage/>
-    // <Background/>
-    <BackgroundDitails/>
+    <div>
+      <Frontpage/>
+      <Skills/>
+      <BackgroundDitails/>
+      <Aboutme/>
+    </div>
+   
   );
 }
 
