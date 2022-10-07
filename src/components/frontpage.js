@@ -22,7 +22,7 @@ const frontpage = () => {
         <div className='grid grid-cols-1 sm:grid-cols-2 '>
             <div className="justify-end p-10 lg:m-20 lg:pl-32 rounded-full">
                 <img src={Myphoto} alt='thsi is my iamge' 
-                className="rounded-full "
+                className="rounded-full filter grayscale-0 hover:grayscale-0 "
                 ></img>
             </div>
                 <div className='justify-center lg:py-56 text-start mx-6 lg:ml-0 md:py-32 font-kalam'>
