@@ -20,7 +20,7 @@ const frontpage = () => {
   return (
     <div className=' min-h-screen  bg-black'>
         <div className='grid grid-cols-1 md:grid-cols-2 '>
-            <div className="justify-end p-10 lg:m-20 lg:pl-32 rounded-full mt-16 ">
+            <div className="justify-end p-10 sm:p-[140px] md:p-14 md:pt-24 lg:m-20 lg:pl-32 rounded-full pt-20  ">
                 <img src={Myphoto} alt='thsi is my iamge' 
                 className="rounded-full"
                 ></img>

@@ -2,26 +2,26 @@ import React, { useRef } from 'react'
 import emailjs from 'emailjs-com';
 import Getintouch from '../images/contact.jpg'
 
-const contact = () => {
-
-    // eslint-disable-next-line react-hooks/rules-of-hooks
+const Contact = () => {
     const form = useRef();
 
-  const sendEmail = (e) => {
-    // e.preventDefault();
-    console.log(e.current);
 
-    emailjs.sendForm('service_3nt6epz', 'template_jvjef3g', form.current, 'MmF7LZrVN4p04Q0rL')
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_5zf9kcc', 'template_jvjef3g', form.current, 'nqU6a3msYgpcPxR8g')
       .then((result) => {
+        alert("Hi, it's me Pavan... \nI recived your message. Thanks for visiting..")
           console.log(result.text);
-      }, (error) => { 
+      }, (error) => {
           console.log(error.text);
       });
   };
-  const clickahndel=()=>{
+  
+//   const clickahndel=()=>{
     
-    alert("I recived your message. Thanks for visiting..")
-  }
+//     alert("I recived your message. Thanks for visiting..")
+//   }
 
   return (
     <div className='min-h-screen bg-white text-white' id='Contacts'>
@@ -32,18 +32,20 @@ const contact = () => {
             </div>
        <div>
 
-                    <div className="mx-auto px-4 lg:px-0 w-full lg:w-96 max-w-auto ">
+                    <div className="mx-auto mt-14 md:mt-[45px] px-4 lg:px-0 w-full lg:w-96 max-w-auto ">
                         <form ref={form} onSubmit={sendEmail}>
-                        <div className="mb-5">
-                            <label for="name" className="mb-3 block text-base font-medium text-[#e351c1]"
+                        <div className="mb-3">
+                            <label 
+                            // for="name" 
+                            className="mb-3 block text-base font-medium text-[#e351c1]"
                             >  Full Name</label>
                             <input type="text"  required name="name" id="name" placeholder="Full Name"
                             className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#e351c1] outline-none focus:border-[#e351c1] focus:shadow-md"
                             />
                         </div>
-                        <div className="mb-5">
+                        <div className="mb-3">
                             <label
-                            for="email"
+                            // for="email"
                             className="mb-3 block text-base font-medium text-[#e351c1]"
                             >
                             Email Address
@@ -56,13 +58,10 @@ const contact = () => {
                             className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#ff36e1] outline-none focus:border-[#e351c1] focus:shadow-md"
                             />
                         </div>
-                        <div className="mb-5">
-                            <label
-                            for="subject"
-                            className="mb-3 block text-base font-medium text-[#e351c1]"
-                            >
-                            Subject
-                            </label>
+                        <div className="mb-3">
+                            <label 
+                            // for="subject"
+                             className="mb-3 block text-base font-medium text-[#e351c1]"> Subject </label>
                             <input
                             type="text" required
                             name="subject"
@@ -71,9 +70,9 @@ const contact = () => {
                             className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#ff36e1] outline-none focus:border-[#e351c1] focus:shadow-md"
                             />
                         </div>
-                        <div className="mb-5">
+                        <div className="mb-3">
                             <label
-                            for="message"
+                            // for="message"
                             className="mb-3 block text-base font-medium text-[#e351c1]"
                             >
                             Message
@@ -87,7 +86,7 @@ const contact = () => {
                             ></textarea>
                         </div>
                         <div>
-                            <button onClick={clickahndel}
+                            <button 
                             className="hover:bg-pink-700 rounded-md bg-[#e351c1] py-3 px-8 text-base font-semibold text-white outline-none" value="send"
                             >
                             Send
@@ -102,4 +101,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact
