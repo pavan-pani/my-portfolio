@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Frontpage from './components/frontpage';
 import Background from './components/background';
@@ -13,7 +13,6 @@ function App() {
   return (
     <div>
       <Navbar/>
-      
       <Frontpage/>
       <Skills/>
       <BackgroundDitails/>

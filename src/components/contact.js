@@ -11,7 +11,7 @@ const contact = () => {
     // e.preventDefault();
     console.log(e.current);
 
-    emailjs.sendForm('service_ld26o62', 'template_jvjef3g', form.current, '-zIAI93NAXwr-I_k1')
+    emailjs.sendForm('service_3nt6epz', 'template_jvjef3g', form.current, 'MmF7LZrVN4p04Q0rL')
       .then((result) => {
           console.log(result.text);
       }, (error) => { 
@@ -24,7 +24,7 @@ const contact = () => {
   }
 
   return (
-    <div className='min-h-screen bg-white text-white'>
+    <div className='min-h-screen bg-white text-white' id='Contacts'>
        <div className='flex flex-col flex-grow lg:flex-row md:flex-row justify-center pt-4 lg:pt-11'>
             <div className='w-0 items-center lg:w-auto p-0 lg:pt-20 lg:mr-20 md:w-96 md:pt-36 invisible lg:visible md:visible'>
             <img src={Getintouch} ></img>
@@ -41,7 +41,7 @@ const contact = () => {
                             className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#e351c1] outline-none focus:border-[#e351c1] focus:shadow-md"
                             />
                         </div>
-                        <div class="mb-5">
+                        <div className="mb-5">
                             <label
                             for="email"
                             className="mb-3 block text-base font-medium text-[#e351c1]"
@@ -56,7 +56,7 @@ const contact = () => {
                             className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#ff36e1] outline-none focus:border-[#e351c1] focus:shadow-md"
                             />
                         </div>
-                        <div class="mb-5">
+                        <div className="mb-5">
                             <label
                             for="subject"
                             className="mb-3 block text-base font-medium text-[#e351c1]"
@@ -68,13 +68,13 @@ const contact = () => {
                             name="subject"
                             id="subject"
                             placeholder="Enter your subject"
-                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#ff36e1] outline-none focus:border-[#e351c1] focus:shadow-md"
+                            className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#ff36e1] outline-none focus:border-[#e351c1] focus:shadow-md"
                             />
                         </div>
                         <div className="mb-5">
                             <label
                             for="message"
-                            class="mb-3 block text-base font-medium text-[#e351c1]"
+                            className="mb-3 block text-base font-medium text-[#e351c1]"
                             >
                             Message
                             </label>
@@ -83,7 +83,7 @@ const contact = () => {
                             name="message" required
                             id="message"
                             placeholder="Type your message"
-                            class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#ff36e1] outline-none focus:border-[#e351c1] focus:shadow-md"
+                            className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#ff36e1] outline-none focus:border-[#e351c1] focus:shadow-md"
                             ></textarea>
                         </div>
                         <div>

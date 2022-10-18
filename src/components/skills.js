@@ -20,8 +20,8 @@ import Mangodb from '../images/mangodb.jpg'
 
 const skills = () => {
   return (
-    <div className='min-h-screen bg-green-200 font-kalam'>
-    <div className='text-3xl lg:pt-14 lg:p-3 lg:text-6xl md:text-5xl pt-4 text-pink-500 text-center font-semibold'>Technical Skills</div>
+    <div className='min-h-screen bg-green-200 font-kalam ' id='Skills'>
+    <div className='text-3xl pt-20 lg:pt-20 lg:p-3 lg:text-6xl md:text-5xl pt-4 text-pink-500 text-center font-semibold '>Technical Skills</div>
         <div className='flex flex-row flex-wrap bg-white lg:flex-row justify-center  sm:justify-center border-t-8 border-x-4 border-b-2 mx-2 rounded-xl border-pink-400 lg:mx-10 md:mx-4 pb-2 lg:py-14'>
             <div className=' w-20 lg:w-32 md:w-28 bg-slate-400  mx-3 my-5 shadow-md  hover:shadow-lg hover:shadow-pink-400'> 
                 <img src={Html} alt="HTML image" title="5/5"
