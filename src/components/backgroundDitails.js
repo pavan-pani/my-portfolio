@@ -5,8 +5,8 @@ const backgroundDitails = () => {
     <div className='min-h-screen bg-gray-700 text-black' id='BackgroundDitails'>
     
         <div className=' flex flex-col md:flex-row justify-center pt-8 shadow-md mx-2 rounded-xl '>
-            <div className='mt-2'>
-                <div className='m-2 lg:px-20 py-3 border-2 border-dotted hover:border-pink-500'>
+            <div className='mt-2 pt-6 md:pt-10'>
+                <div className='m-2 lg:px-20 py-3 border-2 border-dotted hover:border-pink-500 '>
                     <h1 className='text-3xl lg:text-4xl text-pink-500 text-center font-semibold hover:text-white'>Technical Background</h1>
                 </div>
                     <div className='absolute z-50 bg-pink-400 rounded-full ml-1 w-10 h-max '>
@@ -58,7 +58,7 @@ const backgroundDitails = () => {
 
                         {/* ----------------------------------------------------------------------- */}
                 <div className='flex flex-col lg:flex-row md:flex-row'>
-                    <div className=' mt-2'>
+                    <div className=' mt-2 pt-0 md:pt-10'>
                         <div className='m-2 lg:px-20 py-3 border-2 border-dotted hover:border-pink-500'>
                             <h1 className='text-3xl lg:text-4xl text-pink-500 text-center font-semibold hover:text-white'>Education Background</h1>
                         </div>

@@ -1,11 +1,14 @@
 import { useState } from "react";
+import { motion, useScroll } from "framer-motion";
 
 
  const NavBar = () =>{
     const [navbar, setNavbar] = useState(false);
+    const { scrollYProgress } = useScroll();
 
     return (
         <nav className="fixed w-full  shadow bg-[#e24bc9cc]">
+        
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -14,7 +17,7 @@ import { useState } from "react";
                         </a>
                         <div className="md:hidden">
                             <button
-                                className="p-2 text-white-700 rounded-md outline-none"
+                                className="p-2 text-white-700 "
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (
@@ -76,6 +79,7 @@ import { useState } from "react";
                     </div>
                 </div>
             </div>
+            <motion.div className="fixed left-0 right-0 h-1 md:h-2 bg-pink-500 origin-left" style={{ scaleX: scrollYProgress }}></motion.div>
         </nav>
     );
 }
