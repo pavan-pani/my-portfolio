@@ -87,7 +87,7 @@ const Contact = () => {
                         </div>
                         <div>
                             <button 
-                            className="hover:bg-pink-700 rounded-md bg-[#e351c1] py-3 px-8 text-base font-semibold text-white outline-none" value="send"
+                            className="hover:bg-pink-500 rounded-md bg-[#e439bc] py-3 px-8 text-base font-semibold text-white outline-none transition transform hover:-translate-1 hover:scale-110" value="send"
                             >
                             Send
                             </button>

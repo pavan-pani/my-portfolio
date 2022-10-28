@@ -6,7 +6,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        kalam:"'Kalam'"
+        kalam:"'Kalam'",
+        navhead:"'Style Script', cursive",
+        navitems:"'Courgette', cursive",
+        backgroudfont:"'Open Sans', sans-serif"
       }
     },
   },

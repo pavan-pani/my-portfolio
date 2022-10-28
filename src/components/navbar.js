@@ -7,13 +7,13 @@ import { motion, useScroll } from "framer-motion";
     const { scrollYProgress } = useScroll();
 
     return (
-        <nav className="fixed w-full  shadow bg-[#e24bc9cc]">
+        <nav className="fixed w-full index3 shadow bg-[#05050567]">
         
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <a href="#">
-                            <h2 className="text-2xl">Pavan Portfolio</h2>
+                            <h2 className="text-2xl md:text-4xl text-yellow-300 font-navhead transition duration-700 transform hover:-translate-1 hover:scale-110">Pavan Portfolio</h2>
                         </a>
                         <div className="md:hidden">
                             <button
@@ -23,7 +23,7 @@ import { motion, useScroll } from "framer-motion";
                                 {navbar ? (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6"
+                                        className="w-6 h-6 text-white shadow-xl"
                                         viewBox="0 0 20 20"
                                         fill="currentColor"
                                     >
@@ -36,7 +36,7 @@ import { motion, useScroll } from "framer-motion";
                                 ) : (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6"
+                                        className="w-6 h-6 text-white shadow-xl"
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
@@ -55,31 +55,32 @@ import { motion, useScroll } from "framer-motion";
                 </div>
                 <div>
                     <div
-                        className={`flex-1 justify-self-center text-center pb-3 mt-2 md:block md:pb-0 md:mt-0 ${
+                        className={`flex-1 justify-self-center text-center transition origin-right pb-3 mt-2 md:block md:pb-0 md:mt-0 ${
                             navbar ? "block" : "hidden"
                         }`}
                     >
-                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 ">
-                            <li className="text-white  hover:text-black">
+                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 font-navitems text-xl">
+                            <li className="text-white shadow-sm hover:text-yellow-300 transition duration-500 transform hover:-translate-1 hover:scale-110">
                                 <a href="#">Home</a>
                             </li>
-                            <li className="text-white  hover:text-black">
+                            <li className="text-white shadow-sm  hover:text-yellow-300 transition duration-500 transform hover:-translate-1 hover:scale-110">
                                 <a href="#Skills">Skills</a>
                             </li>
-                            <li className="text-white hover:text-black">
-                                <a href="#BackgroundDitails">Background</a>
-                            </li>
-                            <li className="text-white hover:text-black">
+                            <li className="text-white shadow-sm hover:text-yellow-300 transition duration-500 transform hover:-translate-1 hover:scale-110">
                                 <a href="#About Me">About Me</a>
                             </li>
-                            <li className="text-white hover:text-black">
+                            <li className="text-white shadow-sm hover:text-yellow-300 transition duration-500 transform hover:-translate-1 hover:scale-110">
+                                <a href="#BackgroundDitails">Background</a>
+                            </li>
+                            
+                            <li className="text-white shadow-sm hover:text-yellow-300 transition duration-500 transform hover:-translate-1 hover:scale-110">
                                 <a  href="#Contacts">Contact Me</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <motion.div className="fixed left-0 right-0 h-1 md:h-2 bg-pink-500 origin-left" style={{ scaleX: scrollYProgress }}></motion.div>
+            <motion.div className="fixed left-0 right-0 h-1  bg-[#e0e62cde] origin-left" style={{ scaleX: scrollYProgress }}></motion.div>
         </nav>
     );
 }
